@@ -9,8 +9,10 @@
 \usepackage{graphicx}
 \usepackage{url} % príkaz \url na formátovanie URL
 \usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
-
+\usepackage{wrapfig}
 \usepackage{cite}
+\usepackage{mathtools}
+
 %\usepackage{times}
 
 \pagestyle{headings}
@@ -63,7 +65,10 @@ Z obr.~\ref{f:rozhod} je všetko jasné.
 \section{Iná časť} \label{ina}
 
 Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
-
+\begin{wrapfigure}{l}{0.75\textwidth}
+\centering
+\includegraphics{fiit_nahlad.jpg}
+\end{wrapfigure}
 Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
 
 
@@ -111,7 +116,16 @@ Nový odsek
 
 \section{Ešte dôležitejšia časť} \label{dolezitejsia}
 
-
+\begin{displaymath}
+A_{m,n} =
+\begin{pmatrix}
+	a_{1,1} & 2 & 3 & \cdots & 5 \\
+	2 & 3 & 4 & \cdots & 6 \\
+	3 & 4 & 5 & \cdots & 7 \\
+	\vdots &\vdots & \vdots & \ddots & \vdots \\
+	5 & 6 & 7 & \cdots & a_{m,n}
+\end{pmatrix}
+\end{displaymath}
 
 
 \section{Záver} \label{zaver} % prípadne iný variant názvu
